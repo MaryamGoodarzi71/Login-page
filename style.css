@@ -210,6 +210,7 @@ button:hover{
    to{text-shadow: 4px 4px 26px #c74040;}
 }
 
+/* Responsive */
 
 @media (max-width: 1400px){
    .container{
