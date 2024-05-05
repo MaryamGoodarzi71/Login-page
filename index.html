@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Page</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+      <div class="login-page">
+         <div class="login-page-started">
+            <h3 class="login-page-started-title">Welcome Back</h3>
+            <div class="login-page-started-images">
+                  <img class="login-page-started-img1" src="./image/img-2.jpeg" alt="img1">
+                  <img class="login-page-started-img2" src="./image/img-3.webp" alt="img2">
+                  <img class="login-page-started-img3" src="./image/img-4.jpeg" alt="img3">
+         </div>
+         </div>
+         <div class="login-page-form">
+               <h2>Login</h2>
+               <div>        
+                  <input type="text" name="username" placeholder="Username" class="username-input" required>
+               </div>
+               <div class="password-input-wrapper">
+                  <input type="password" name="password" placeholder="Password" class="password-input" required>
+                  <svg class="password-eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                   </svg>                
+               </div>
+               <button type="submit" disabled>Log In</button>
+               <div class="remember-box">
+                 <div class="checkbox-wrapper">
+                    <input type="checkbox" name="checkbox" id="check" class="checkbox-input">
+                  <label for="check"  class="checkbox-text">Remamber Me</label>
+                 </div>
+                  <div>
+                     <a href="#">Forgot Password?</a>
+                  </div>
+               </div>
+            <div class="login-page-cover">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+               </svg>             
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

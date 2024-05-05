@@ -1,0 +1,360 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background: url("./image/img-1.jpg") no-repeat center center;
+   background-size: cover;
+   font-family: 'Roboto';
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input, button{
+   border: none;
+   outline: none;
+}
+
+a{
+   text-decoration: none;
+   color: #A1887F;
+}
+
+.container{
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.login-page{
+   max-width: 60rem;
+   background-color: rgba(255, 255, 255, 0.292);
+   box-shadow: 0 0 15px 7px rgba(163, 159, 159, 0.749);
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(2px);
+   margin: 0 auto;
+}
+
+.login-page-started{
+   width: 60%;
+   height: 100%;
+   padding: 20px;
+}
+
+.login-page-started-title{
+   font-family: 'Dancing Script';
+   font-weight: bold;
+   text-align: center;
+   font-size: 50px;
+   margin-top: 20px;
+   margin-left: -39px;
+   color: #374151;
+   animation: blinker 700ms linear infinite alternate;
+}
+
+.login-page-started-images{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+}
+
+.login-page-started img{
+   width: 120px;
+   height: 120px;
+   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.login-page-form{
+   width: 40%;
+   height: 100%;
+   background-color: #EFEBE9;
+   border-right: none;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   text-align: center;
+   padding: 27px 10px 27px;
+   position: relative;
+}
+
+.login-page-form h2{
+   font-family: 'Dancing Script';
+   font-size: 30px;
+   margin-bottom: 7px;
+   color: #374151;
+}
+
+input:not(.checkbox-input){
+   width: 90%;
+   height: 45px;
+   font-size: 17px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   background-color: rgba(231, 221, 221, 0);
+   border-bottom: 1px solid #8D6E63;
+   color: #374151;
+}
+
+.password-input-wrapper{
+   position: relative;
+}
+
+.password-eye-icon{
+   position: absolute;
+   top: 26px;
+   right: 18px;
+   width: 22px;
+   height: 22px;
+   color: #374151;
+   cursor: pointer;
+}
+
+input::placeholder{
+   font-size: 17px;
+   color: #71717A;
+}
+
+button{
+   width: 90%;
+   height: 50px;
+   background-color: #fff;
+   color: #374151;
+   border-radius: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s linear 0.3s;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+button:hover{
+   background-color: #BCAAA4;
+   color: #166534;
+}
+
+.remember-box{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 13px;
+   color: #A1887F;
+}
+
+.checkbox-wrapper{
+   display: flex;
+   align-items: center;
+}
+
+.checkbox-text{
+   margin-left: 3px;
+}
+
+.remember-box a{
+   transition: all 0.3s ease 0.2s;
+}
+
+.remember-box a:hover{
+   display: inline-block;
+   transform: scale(1.2);
+   font-weight: bolder;
+   color: #991424;
+}
+
+.login-page-cover{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #fee2e2;
+   transition: all 0.4s linear 100ms;
+   cursor: pointer;
+}
+
+.login-page-cover svg{
+   width: 100%;
+   height: 100%;
+   color: #BCAAA4;
+}
+
+.move-cover{
+   transform: translatex(-400px);
+}
+
+.move-cover-width{
+  width: 560px;
+}
+
+.move-cover-border-radius{
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+@keyframes blinker{
+   from{text-shadow: 0px 0px 0px #fbf5f500;}
+   to{text-shadow: 4px 4px 26px #c74040;}
+}
+
+
+@media (max-width: 1400px){
+   .container{
+      width: 1370px;
+   }
+   .login-page{
+      max-width: 50rem;
+   }
+   .move-cover{
+      transform: translatex(-340px);
+   }
+   .move-cover-width{
+     width: 460px;
+   }
+}
+
+@media screen and (max-width: 1200px){
+   .container{
+      width: 1140px;
+   }
+}
+
+@media screen and (max-width: 992px){
+   .container{
+      width: 960px;
+   }
+   .login-page {
+      max-width: 45rem;
+   }
+   .login-page-started{
+      width: 55%;
+   }
+   .login-page-form{
+      width: 45%;
+   }
+   .move-cover-width{
+     width: 380px;
+   }
+}
+   
+@media screen and (max-width: 768px){
+   .container{
+      width: 720px;
+   }
+   .login-page{
+      flex-direction: column;
+      max-width: 26rem;
+   }
+   .login-page-started{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 30px;
+   }
+   .login-page-form{
+      width: 100%;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 0px;
+   }
+   .login-page-started-images{
+      margin-top: 0px;
+   }
+   .login-page-started img{
+      width: 90px;
+      height: 87px;
+   }
+   .login-page-started-img1, .login-page-started-img3{
+      display: none;
+   }
+   .login-page-started-title{
+      text-align: center;
+      font-size: 39px;
+      margin: 0;
+      height: 80px;
+      line-height: 83px;
+   }
+   input:not(.checkbox-input){
+      height: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
+   .login-page-form h2{
+      font-size: 36px;
+   }
+   .password-eye-icon{
+      right: 33px;
+   }
+   .remember-box{
+      font-size: 15px;
+      justify-content: space-around;
+   }
+   .move-cover{
+      opacity: 0;
+      visibility: hidden;
+   }
+   .login-page-cover{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+   }
+}
+
+@media screen and (max-width: 576px){
+   .container{
+      width: 540px;
+   }
+   .login-page-started-title{
+      font-size: 27px;
+   }
+   .login-page-started-images{
+      margin-left: 10px;
+   }
+   input::placeholder{
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 350px){
+   .login-page-started-title{
+      font-size: 23px;
+   }
+   .login-page-started img{
+      width: 80px;
+      height: 80px;
+   }
+   .login-page-form h2{
+      font-size: 32px;
+      margin-bottom: unset;
+   }
+   .password-eye-icon{
+      right: 20px;
+   }
+   button{
+      font-size: 16px;
+      height: 45px;
+      margin-top: 20px;
+   }
+   .remember-box{
+      font-size: 14px;
+   }
+}
+
+
+
+
+
+
+
